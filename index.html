@@ -60,12 +60,18 @@
             width: 96px;
             height: 96px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #E7E5E4 0%, #D6D3D1 100%);
+            background: #fff;
             margin: 0 auto 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 36px;
+            overflow: hidden;
+        }
+        
+        header .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         header h1 {
@@ -232,7 +238,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="avatar">👋</div>
+            <div class="avatar"><img src="avatar.png" alt="沙拉米拉"></div>
             <h1>沙拉米拉</h1>
             <p class="intro">十年客户端开发工程师，专注独立开发与AI应用落地</p>
             <div class="tags">
