@@ -3,194 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>沙拉米拉 - 十年客户端开发工程师</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6; 
-            color: #333;
-            background: #f5f5f5;
-        }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        
-        /* 头部 */
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 0 0 30px 30px;
-        }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        header .tagline { font-size: 1.2em; opacity: 0.9; }
-        
-        /* 区块 */
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        
-        /* 关于 */
-        .about { font-size: 1.1em; }
-        
-        /* 技能标签 */
-        .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
-        .tag {
-            background: #f0f4ff;
-            color: #667eea;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        
-        /* 产品卡片 */
-        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .product-card {
-            border: 1px solid #eee;
-            border-radius: 12px;
-            padding: 20px;
-            transition: transform 0.2s;
-        }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        .product-card h3 { color: #333; margin-bottom: 10px; }
-        .product-card p { color: #666; font-size: 0.9em; }
-        .product-card .link { 
-            display: inline-block; 
-            margin-top: 10px; 
-            color: #667eea; 
-            text-decoration: none;
-        }
-        
-        /* 社交链接 */
-        .social-links { display: flex; gap: 15px; flex-wrap: wrap; }
-        .social-link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 20px;
-            background: #f5f5f5;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #333;
-            transition: background 0.2s;
-        }
-        .social-link:hover { background: #eee; }
-        
-        /* 博客文章 */
-        .blog-list { list-style: none; }
-        .blog-list li {
-            padding: 15px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .blog-list li:last-child { border: none; }
-        .blog-list a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.05em;
-        }
-        .blog-list a:hover { color: #667eea; }
-        
-        /* 页脚 */
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #999;
-            font-size: 0.9em;
-        }
-        
-        /* 移动端 */
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.8em; }
-            section { padding: 20px; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>👋 沙拉米拉</h1>
-            <p class="tagline">十年客户端开发工程师 | 探索独立开发与AI编程</p>
-        </div>
-    </header>
+    <title>沙拉米拉 | 十年客户端开发工程师</title>
+    <meta name="description" content="十年客户端开发工程师，探索独立开发与AI编程的个人门户">
     
-    <div class="container">
-        <!-- 关于 -->
-        <section class="about">
-            <h2>关于我</h2>
-            <p>十年客户端开发经验，目前在探索<strong>一人公司</strong>与<strong>独立开发</strong>的可能性。</p>
-            <p>希望通过 <strong>vibe coding</strong> 的方式，帮助非技术人员用AI工具定制自己的业务。</p>
-            <div class="tags">
-                <span class="tag">客户端开发</span>
-                <span class="tag">独立开发</span>
-                <span class="tag">Vibe Coding</span>
-                <span class="tag">AI编程</span>
-                <span class="tag">小红书运营中</span>
-            </div>
-        </section>
-        
-        <!-- 产品/项目 -->
-        <section>
-            <h2>🛠️ 我的产品</h2>
-            <div class="products">
-                <div class="product-card">
-                    <h3>GitHub Release 代理</h3>
-                    <p>GitHub Release API 代理服务，避免访问限制</p>
-                    <a href="https://grps.hawkeye-xb.xyz/" class="link" target="_blank">访问 →</a>
-                </div>
-                <div class="product-card">
-                    <h3>P-Pass File</h3>
-                    <p>基于 WebRTC 的点对点文件传输工具</p>
-                    <a href="https://p-pass-file-website.deno.dev/" class="link" target="_blank">访问 →</a>
-                </div>
-                <div class="product-card">
-                    <h3>Copy Checklist</h3>
-                    <p>可创建副本的确认清单工具</p>
-                    <a href="https://copy-checklist-hxb.deno.dev/" class="link" target="_blank">访问 →</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- 博客（保留链接） -->
-        <section>
-            <h2>📝 技术博客</h2>
-            <p style="color: #666; margin-bottom: 15px;">博客内容会逐步迁移到自媒体平台，历史文章可查看：</p>
-            <ul class="blog-list">
-                <li><a href="https://hawkeye-xb.xyz/zh/" target="_blank">→ 查看完整博客文章列表</a></li>
-            </ul>
-        </section>
-        
-        <!-- 社交入口 -->
-        <section>
-            <h2>📮 找到我</h2>
-            <div class="social-links">
-                <a href="#" class="social-link">
-                    <span>📕</span> 小红书
-                </a>
-                <a href="#" class="social-link">
-                    <span>📧</span> 微信公众号
-                </a>
-                <a href="https://github.com/hawkeye-xb" class="social-link">
-                    <span>🐙</span> GitHub
-                </a>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>© 2026 沙拉米拉 | 用心做事，保持热爱</p>
-    </footer>
-    
-    <!-- 结构化数据 - 让Agent能读懂 -->
+    <!-- 结构化数据 - Agent可读 -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -199,18 +15,303 @@
         "alternateName": "samirahao",
         "jobTitle": "客户端开发工程师",
         "description": "十年客户端开发经验，探索独立开发与AI编程",
-        "url": "https://salamila.com",
-        "knowsAbout": [
-            "客户端开发",
-            "独立开发",
-            "Vibe Coding",
-            "AI编程",
-            "Electron"
-        ],
-        "sameAs": [
-            "https://github.com/hawkeye-xb"
-        ]
+        "url": "https://samira.ai",
+        "knowsAbout": ["客户端开发", "独立开发", "Vibe Coding", "AI编程", "Electron"],
+        "sameAs": ["https://github.com/hawkeye-xb"]
     }
     </script>
+    
+    <style>
+        :root {
+            /* 柔和的自然色调 */
+            --bg-primary: #FAFAF9;
+            --bg-card: #FFFFFF;
+            --text-primary: #1C1917;
+            --text-secondary: #57534E;
+            --text-muted: #A8A29E;
+            --accent: #0D9488;
+            --accent-light: #F0FDFA;
+            --border: #E7E5E4;
+            --shadow: rgba(0,0,0,0.06);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'PingFang SC', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* 简洁的头部 */
+        header {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        header .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #E7E5E4 0%, #D6D3D1 100%);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+        
+        header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        
+        header .intro {
+            font-size: 17px;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        
+        /* 标签 */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .tag {
+            font-size: 13px;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+        
+        /* 区块 */
+        section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px var(--shadow);
+        }
+        
+        section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        
+        /* 关于 */
+        .about p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .about p:last-child { margin-bottom: 0; }
+        
+        /* 产品卡片 */
+        .products {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .product-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+        
+        .product-card:hover {
+            background: var(--accent-light);
+        }
+        
+        .product-info h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .product-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        .product-arrow {
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+        
+        /* 链接列表 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: var(--bg-primary);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: background 0.2s;
+        }
+        
+        .link-item:hover {
+            background: var(--accent-light);
+        }
+        
+        .link-icon {
+            font-size: 20px;
+        }
+        
+        .link-text {
+            font-size: 15px;
+        }
+        
+        /* 博客 */
+        .blog-link {
+            display: block;
+            padding: 20px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .blog-link:hover {
+            background: var(--accent-light);
+        }
+        
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+        
+        /* 移动端 */
+        @media (max-width: 600px) {
+            header { padding: 60px 0 40px; }
+            header h1 { font-size: 24px; }
+            section { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="avatar">👋</div>
+            <h1>沙拉米拉</h1>
+            <p class="intro">十年客户端开发工程师，探索独立开发与AI编程的可能性</p>
+            <div class="tags">
+                <span class="tag">客户端开发</span>
+                <span class="tag">独立开发</span>
+                <span class="tag">Vibe Coding</span>
+                <span class="tag">AI编程</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- 关于 -->
+        <section class="about">
+            <h2>关于</h2>
+            <p>十年客户端开发经验，目前在探索一人公司与独立开发的可能。</p>
+            <p>希望通过 <strong>vibe coding</strong> 的方式，帮助非技术人员用AI工具定制自己的业务。</p>
+        </section>
+        
+        <!-- 产品 -->
+        <section>
+            <h2>产品</h2>
+            <div class="products">
+                <a href="https://grps.hawkeye-xb.xyz/" class="product-card" target="_blank">
+                    <div class="product-info">
+                        <h3>GitHub Release 代理</h3>
+                        <p>避免 GitHub API 访问限制</p>
+                    </div>
+                    <span class="product-arrow">→</span>
+                </a>
+                <a href="https://p-pass-file-website.deno.dev/" class="product-card" target="_blank">
+                    <div class="product-info">
+                        <h3>P-Pass File</h3>
+                        <p>基于 WebRTC 的点对点文件传输</p>
+                    </div>
+                    <span class="product-arrow">→</span>
+                </a>
+                <a href="https://copy-checklist-hxb.deno.dev/" class="product-card" target="_blank">
+                    <div class="product-info">
+                        <h3>Copy Checklist</h3>
+                        <p>可创建副本的确认清单</p>
+                    </div>
+                    <span class="product-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- 博客 -->
+        <section>
+            <h2>博客</h2>
+            <a href="https://hawkeye-xb.xyz/zh/" class="blog-link" target="_blank">
+                查看历史文章 →
+            </a>
+        </section>
+        
+        <!-- 找到我 -->
+        <section>
+            <h2>找到我</h2>
+            <div class="links">
+                <a href="#" class="link-item">
+                    <span class="link-icon">📕</span>
+                    <span class="link-text">小红书</span>
+                </a>
+                <a href="#" class="link-item">
+                    <span class="link-icon">📧</span>
+                    <span class="link-text">微信公众号</span>
+                </a>
+                <a href="https://github.com/hawkeye-xb" class="link-item" target="_blank">
+                    <span class="link-icon">🐙</span>
+                    <span class="link-text">GitHub</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 沙拉米拉 · 用心做事，保持热爱</p>
+        </div>
+    </footer>
 </body>
 </html>
